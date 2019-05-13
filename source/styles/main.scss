@@ -53,11 +53,29 @@ body {
 
     &::after {
       content: "\f00d";
-      color: $color-6;
+      color: $color-4;
       font-family: $font-3;
       display: inline-block;
       font-size: $font-size-1;
     }
+  }
+
+  &.sec{
+      &-1{
+        background-color: $color-1-back;
+      }
+      &-2{
+        background-color: $color-2-back;
+      }
+      &-3{
+        background-color: $color-3-back;
+      }
+      &-4{
+        background-color: $color-4-back;
+      }
+      &-5{
+        background-color: $color-5-back;
+      }
   }
 }
 
@@ -127,10 +145,11 @@ body {
   }
   p {
     font-family: $font-2;
-    color: $color-5;
+    color: $color-4;
     font-size: $font-size-1;
     display: inline-block;
     line-height: 24px;
     width: 360px;
   }
 }
+
