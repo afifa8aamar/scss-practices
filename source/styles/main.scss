@@ -39,6 +39,10 @@ body {
 
 .row {
   margin-bottom: 30px;
+  display: flex;
+}
+.last-row {
+    margin-bottom: 0px;
 }
 
 .sec {
@@ -46,7 +50,7 @@ body {
   border-radius: 10px;
   display: inline-flex;
   padding-right: 18px;
-  margin-right: 26px;
+  margin-right: 80px;
   a {
     margin-left: 37px;
     margin-top: 15px;
@@ -149,7 +153,6 @@ body {
     font-size: $font-size-1;
     display: inline-block;
     line-height: 24px;
-    width: 360px;
   }
 }
 
