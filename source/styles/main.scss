@@ -1,18 +1,18 @@
 $color-1-back: #ffc12d;
 $color-1-border: #f9b718;
 $color-1-fill: #a47503;
-$color-2-back:#97E411;
-$color-2-border:#7BC200;
+$color-2-back: #97e411;
+$color-2-border: #7bc200;
 $color-2-fill: #558502;
-$color-3-back:#FD7761;
-$color-3-border:#F55C43;
-$color-3-fill:#D52E13;
-$color-4-back: #6FD9FC;
-$color-4-border: #47B4F6;
-$color-4-fill:#0787D4;
-$color-5-back: #A39CDC;
-$color-5-border:#8781BD;
-$color-5-fill:#5B568E;
+$color-3-back: #fd7761;
+$color-3-border: #f55c43;
+$color-3-fill: #d52e13;
+$color-4-back: #6fd9fc;
+$color-4-border: #47b4f6;
+$color-4-fill: #0787d4;
+$color-5-back: #a39cdc;
+$color-5-border: #8781bd;
+$color-5-fill: #5b568e;
 
 $color-4: #2c3e50;
 $color-5: #a1b1bc;
@@ -42,7 +42,7 @@ body {
   display: flex;
 }
 .last-row {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .sec {
@@ -64,22 +64,24 @@ body {
     }
   }
 
-  &.sec{
-      &-1{
-        background-color: $color-1-back;
-      }
-      &-2{
-        background-color: $color-2-back;
-      }
-      &-3{
-        background-color: $color-3-back;
-      }
-      &-4{
-        background-color: $color-4-back;
-      }
-      &-5{
-        background-color: $color-5-back;
-      }
+  &.sec {
+    &-1 {
+      background-color: $color-1-back;
+    }
+    &-2 {
+      background-color: $color-2-back;
+    }
+    &-3 {
+      background-color: $color-3-back;
+    }
+    &-4 {
+      background-color: $color-4-back;
+    }
+    &-5 {
+      background-color: $color-5-back;
+    }
+
+
   }
 }
 
@@ -100,28 +102,28 @@ body {
 
   &.alert {
     &-2::before {
-      content: "\f12a";
+      content: "\f00c";
       font-family: $font-3;
       background-color: $color-2-back;
       border: 7px solid $color-2-border;
       color: $color-2-fill;
     }
     &-3::before {
-      content: "\f12a";
+      content: "\f00d";
       font-family: $font-3;
       background-color: $color-3-back;
       border: 7px solid $color-3-border;
       color: $color-3-fill;
     }
     &-4::before {
-      content: "\f12a";
+      content: "\f0e7";
       font-family: $font-3;
       background-color: $color-4-back;
       border: 7px solid $color-4-border;
       color: $color-4-fill;
     }
     &-5::before {
-      content: "\f12a";
+      content: "\f129";
       font-family: $font-3;
       background-color: $color-5-back;
       border: 7px solid $color-5-border;
@@ -155,4 +157,3 @@ body {
     line-height: 24px;
   }
 }
-
