@@ -7,9 +7,12 @@
   "license": "MIT",
   "scripts": {
     "server": "light-server -s ./dist/",
+
     "lint:css": "stylelint \"./source/styles/**/*.scss\" --syntax scss",
     "lint:html": "htmllint \"./source/*.html\"",
     "lint": "yarn lint:css & yarn lint:html",
+
+
     "development": "gulp"
   },
   "devDependencies": {
@@ -23,5 +26,6 @@
     "stylelint-config-property-sort-order-smacss": "^4.0.2",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-scss": "^3.6.1"
+
   }
 }
