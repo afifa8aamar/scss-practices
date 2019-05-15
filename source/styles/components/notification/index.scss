@@ -1,0 +1,131 @@
+@import '../../palette.scss';
+
+.row {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.last-row {
+    margin-bottom: 0;
+}
+
+.notification {
+    display: inline-flex;
+    margin-right: 80px;
+    padding-right: 18px;
+    border: 1px solid $color-7;
+    border-radius: 10px;
+
+    &::before {
+        content: '\f12a';
+        display: block;
+        margin: 42px 50px 43px;
+        padding: 13px 20px 12px 20px;
+        border: 7px solid #F9B718;
+        border-radius: 70px;
+        background-color: #FFC12D;
+        color: #A47503;
+        font-family: 'FontAwesome';
+        font-size: 24px;
+    }
+
+    &.access::before {
+        content: '\f00c';
+        padding: 13px 12px 12px 12px;
+        border: 7px solid $color-2-border;
+        background-color: $color-2-back;
+        color: $color-2-fill;
+        font-family: $font-3;
+    }
+
+    &.error::before {
+        content: '\f00d';
+        padding: 13px 12px 12px 12px;
+        border: 7px solid $color-3-border;
+        background-color: $color-3-back;
+        color: $color-3-fill;
+        font-family: $font-3;
+    }
+
+    &.important::before {
+        content: '\f0e7';
+        padding: 13px 20px 12px 20px;
+        border: 7px solid $color-4-border;
+        background-color: $color-4-back;
+        color: $color-4-fill;
+        font-family: $font-3;
+    }
+
+    &.info::before {
+        content: '\f129';
+        padding: 13px 20px 12px 20px;
+        border: 7px solid $color-5-border;
+        background-color: $color-5-back;
+        color: $color-5-fill;
+        font-family: $font-3;
+    }
+
+    a {
+        margin-top: 15px;
+        margin-left: 37px;
+
+        &::after {
+            content: '\f00d';
+            display: inline-block;
+            color: $color-4;
+            font-family: $font-3;
+            font-size: $font-size-1;
+        }
+    }
+
+    &.solid {
+
+        &.notification {
+            background-color: $color-1-back;
+        }
+
+        &.access {
+            background-color: $color-2-back;
+        }
+
+        &.error {
+            background-color: $color-3-back;
+        }
+
+        &.important {
+            background-color: $color-4-back;
+        }
+
+        &.info {
+            background-color: $color-5-back;
+        }
+    }
+}
+
+.notification div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 34px;
+    margin-left: -21px;
+    letter-spacing: 0;
+    word-spacing: 1px;
+
+    h1 {
+        display: inline-block;
+        margin-bottom: 6px;
+        color: $color-4;
+        font-family: $font-1;
+        font-size: $font-size-1;
+        letter-spacing: 1px;
+        line-height: 26px;
+        word-spacing: 2.5px;
+    }
+
+    p {
+        display: inline-block;
+        color: $color-4;
+        font-family: $font-2;
+        font-size: $font-size-1;
+        line-height: 24px;
+    }
+}
